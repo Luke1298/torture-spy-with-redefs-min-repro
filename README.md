@@ -1,4 +1,4 @@
-# Minimal with-redefs of a spy broken example
+# Minimal broken example of with-redefs spy bug
 
 Run the following to see the 'is not a function' TypeError
 
