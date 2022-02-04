@@ -1,6 +1,6 @@
 # Minimal broken example of with-redefs spy bug
 
-Run the following to see the 'is not a function' TypeError
+Run the following to see the "'is not a function' TypeError"
 
 ```bash
 npm install
