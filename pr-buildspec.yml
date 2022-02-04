@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10
+  pre_build:
+    commands:
+      - echo ------ Unit tests ------
+      - npm ci
+      - npm run test
+  build:
+    commands:
+      - echo Build started on `date`
+      - npm run app #Compile the app
+      - zip -r9 $FUNCTION_NAME.zip ./js/*

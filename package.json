@@ -1,0 +1,15 @@
+{
+  "name": "minimum-example",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "deps": "npm install",
+    "test": "shadow-cljs compile test --config-merge \"{:autorun true}\"",
+    "test:watch": "concurrently -r -i \"nodemon ./js/node-tests.js\" \"shadow-cljs watch test\"",
+    "app": "shadow-cljs compile app",
+    "app:watch": "shadow-cljs watch app"
+  },
+  "devDependencies": {
+    "shadow-cljs": "2.16.12"
+  }
+}

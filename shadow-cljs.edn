@@ -1,0 +1,15 @@
+{:source-paths ["src"]
+ :dependencies
+ [[tortue/spy "2.9.0"]]
+
+ :builds {:test
+          {:target :node-test
+           :output-to "js/node-tests.js"
+           :ns-regexp "-test$"}
+          :app
+          {:target :node-library
+           :exports {:handler primary.main/router}
+           :js-options {:js-package-dirs ["./js/node_modules"]}
+           :output-dir "js"
+           :output-to "js/index.js"}}}
+
